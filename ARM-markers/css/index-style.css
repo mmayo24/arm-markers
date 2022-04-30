@@ -1,3 +1,14 @@
+:root {
+    --color-1: rgba(18, 2, 34, .95);
+    --color-2: rgb(236, 200, 37);
+    --color-3: white;
+    --color-4: rgb(245, 68, 68);
+    --font-size: 1vw;
+    --gradients: black maroon;
+}
+
+
+
 html {
     color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -13,37 +24,42 @@ html {
 
 nav a,
 ul {
-    background-color: rgb(34, 2, 34);
+    background-color: rgba(34, 2, 34, .5);
     color: white;
     display: flex;
     font-weight: normal;
     justify-content: space-around;
     line-height: 1.5;
     list-style-type: none;
+    padding: 9px;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 nav a:link,
 nav a:visited {
-    color: white;
-
+    color: var(--color-3);
+ 
 }
 
 nav a:hover,
 nav a:active {
     background-color: rgb(77, 9, 20);
-    text-decoration: underline;
-    color: yellow;
+    text-decoration: none;
+    color: var(--color-2);
 }
 
+img {
+    width: 85%;
+}
 
 .main1 {
     font-size: normal;
+    justify-content: center;
 }
 
 .flat {
-    color: rgb(236, 200, 37);
+    color: var(--color-2);
     margin: 0  auto;
     text-align: center;
 }
@@ -51,21 +67,35 @@ nav a:active {
 h1 {
     text-align: center;
     font-size: x-large;
+    padding: 5px;
 }
+
+h2 {
+    color: var(--color-2)
+}
+
+.emoji::after {
+    content: "  \1f337  ";
+}
+
 
 body {
    
-    background-color: rgba(18, 2, 34, .95);
+    background-color: var(--color-1);
     color: rgb(241, 213, 213);
     text-align: center;
 }
 
 
 
-
-
 footer a {
-    color: white;
+    background-color: rgba(34, 2, 34, .5);
+    color: var(--color-3);
+    font-weight: normal;
+    line-height: 1.5;
+    padding: 2px;
+    text-align: left;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
