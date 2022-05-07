@@ -1,45 +1,105 @@
 :root {
     --color-1: rgba(18, 2, 34, .95);
-    --color-2: rgb(236, 200, 37);
+    --color-2: rgb(192, 170, 45);
     --color-3: white;
     --color-4: rgb(245, 68, 68);
-    --font-size: 1vw;
+    --color-5: yellow;
     --gradients: black maroon;
 }
 
 
-
 html {
-    color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    box-sizing: border-box;
     font-size: 1rem;
     line-height: 1.4;
 }
-
+    
 * ,
 * ::before ,
 * ::after {
     box-sizing: inherit;
 }
 
+
+body {
+    background-color: var(--color-1);
+    color: rgb(241, 213, 213);
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(/img/grn-bkgrnd0.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(0.5rem + 1vw); 
+}
+
+.tagline {
+    animation: tagline 3s linear;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: calc(3rem + 1vw);
+    left: 1px;
+    letter-spacing: 0.7px;
+    position: absolute;
+    text-shadow: 3px 15px 6px black; 
+    top: 450px;
+    width: 100%;
+    word-spacing: 15px;
+}
+
+@media (max-width:600px) {
+     .tagline {
+        font-size: calc(1.5rem + 1vw);
+        top:100px;
+        left: 0px;
+    }
+}
+
+
+img {
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+}
+
+nav,
 nav a,
 ul {
-    background-color: rgba(34, 2, 34, .5);
-    color: white;
-    display: flex;
-    font-weight: normal;
-    justify-content: space-around;
-    line-height: 1.5;
+    background-color: rgba(18, 2, 34, .7);
+    color: var(--color-1);
+    display: grid;
+    font-size: calc(0.3rem + 1vw);
+    font-weight: 100;
+    grid-template-columns: repeat(5, 1fr);
+    line-height: 2.25;
     list-style-type: none;
-    padding: 9px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    width: 100%;
 }
+
+nav li {
+    
+    display: inline-block;
+    
+}
+
 
 nav a:link,
 nav a:visited {
     color: var(--color-3);
- 
+    text-decoration: none;
 }
 
 nav a:hover,
@@ -49,14 +109,14 @@ nav a:active {
     color: var(--color-2);
 }
 
-img {
-    width: 85%;
+.main1 {
+    font-size: calc(0.8rem + 1vw);
+    font-weight: 200;
+    justify-content: center;
+    line-height: 2.5rem;
 }
 
-.main1 {
-    font-size: normal;
-    justify-content: center;
-}
+
 
 .flat {
     color: var(--color-2);
@@ -65,13 +125,41 @@ img {
 }
 
 h1 {
+    color: var(--color-2);
     text-align: center;
-    font-size: x-large;
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(1.25rem + 1vw);
+    line-height: 1.5;
     padding: 5px;
 }
 
 h2 {
-    color: var(--color-2)
+    color: var(--color-2);
+    font-size: calc(0.7rem + 1vw);
+}
+
+.man-knee {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.family {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.pledge {
+    color: var(--color-5);
+    font-size: calc(0.7rem + 1vw);
+    font-weight: 200;
+}
+
+.costs {
+    color: var(--color-3);
+    font-size: calc(0.4rem + 1vw);
+    font-weight: 200;
 }
 
 .emoji::after {
@@ -79,17 +167,12 @@ h2 {
 }
 
 
-body {
-   
-    background-color: var(--color-1);
-    color: rgb(241, 213, 213);
-    text-align: center;
+
+footer {
+    background-color: rgb(41, 4, 4);
 }
 
-
-
 footer a {
-    background-color: rgba(34, 2, 34, .5);
     color: var(--color-3);
     font-weight: normal;
     line-height: 1.5;
@@ -98,4 +181,25 @@ footer a {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+footer a:hover,
+footer a:active {
+    color: var(--color-2);
+    text-decoration: underline;
+  
+}
+
+
+@keyframes tagline {
+    
+    0% {
+               transform: translateX(-600px);
+    }
+    
+    100% {
+                transform: translateX(0);
+    }
+    
+}
+
 
