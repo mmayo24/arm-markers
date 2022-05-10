@@ -20,15 +20,22 @@ html {
     box-sizing: inherit;
 }
 
-.blk {
-    background-color: black;
-}
+
 
 img {
     padding: 0;
+    text-align: center;
     width: 100%;
     margin: 0;
     top: 0;
+}
+
+.img01 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    z-index: 40;
 }
 
 nav,
@@ -50,6 +57,7 @@ ul {
     text-decoration: none;
     text-transform: uppercase;
     width: 100%;
+    z-index: 50;
 
    
 }
@@ -69,11 +77,31 @@ nav a:active {
     font-weight: 500;
 }
 
+.title {
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: calc(3rem + 1vw);
+    letter-spacing: 0.7px;
+    position: absolute;
+    text-shadow: 3px 15px 6px black; 
+    top: 150px;
+    width: 100%;
+    word-spacing: 3px;
+}
+
+@media (max-width:600px) {
+    .title {
+       font-size: calc(1.25rem + 1vw);
+       top:70px;
+       left: 0px;
+   }
+}
+
 
 
 body {
     background-color: var(--color-1);
-    color: rgb(241, 213, 213);
+    color: white;
     text-align: center;
     background-attachment: fixed;
     background-image: url(/img/grn-bkgrnd3.jpg);
@@ -91,46 +119,33 @@ body {
     background-color: black;
 }
 
-.title {
-    background-color: yellow;
-}
 
- #layer {
-    width: 100%;
-    background-color: rgba(201, 210, 236, 0.6);                                                
-    color: rgb(6, 3, 56);
-    height: max-content;      
-    padding: 2rem;                             
-    margin: 0;    
-} 
-
-.ul1 {
-    background:none;
-    color: black;
-    display: inline;
-    font-size: calc(0.5rem + 1vw);
-    font-weight: 600;
-    justify-content: space-around;
-    line-height: 1.5;
-    list-style-type: square;
+#layer1 {
+    background-color: rgba(23, 43, 97, 0.6);                                                
+    color: white;
+    height: max-content;
+    margin: 0 auto;      
     padding: 0;
     position: relative;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: 100%;
-}
+    text-align: center; 
+    width: 100%; 
+    z-index: 20; 
+} 
 
 
-.main1 {
-    font-size: normal;
+
+p {
+    font-size: calc(0.8rem + 1vw);
+    font-weight: 200;
     justify-content: center;
+    line-height: 2.5rem;
+    margin: 25px
 }
 
 
 
 h1 {
-    color: var(--color-2);
+    color: var(--color-3);
     text-align: center;
     font-size: var(--size-three);
     line-height: 1.5;
@@ -142,13 +157,28 @@ h2 {
     font-size: var(--size-two);
 }
 
+.p1b {
+    width: 70%;
+}
+
+.p0 {
+    width: 100%;
+}
 
 
 
 
+footer {
+    background-color: rgb(41, 4, 4);
+}
+
+/* this epit link is an external link for epitaph suggestions - this sht. only */
+
+.epit {
+    color: yellow;
+}
 
 footer a {
-    background-color: rgba(34, 2, 34, .5);
     color: var(--color-3);
     font-weight: normal;
     line-height: 1.5;
@@ -164,5 +194,6 @@ footer a:active {
     text-decoration: underline;
   
 }
+
 
 

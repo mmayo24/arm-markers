@@ -1,5 +1,5 @@
 :root {
-    --color-1: gray;
+    --color-1: rgb(240, 236, 236);
     --color-2: #CBA72D;
     --color-3: white;
     --color-4: rgb(245, 68, 68);
@@ -30,12 +30,25 @@ img {
     width: 100%;
 }
 
+.top {
+    background-color: black;
+    width: 100%;
+}
+
+.map,.wrkng, .cleang, .gravel,
+.dillard {
+    background-color: black;
+    width: 80%;
+}
+
+
+
 nav,
-nav a,
-ul {
+nav a, ul {
     background-color: rgb(77, 9, 20);
     color: var(--color-1);
     display: grid;
+    font-family: 'poppins', sans-serif;
     font-size: calc(0.3rem + 1vw);
     font-weight: 100;
     grid-template-columns: repeat(5, 1fr);
@@ -64,6 +77,7 @@ nav a:active {
     text-decoration: none;
     color: yellow;
     font-weight: 500;
+    
 }
 
 nav li {
@@ -73,12 +87,9 @@ nav li {
 
 body {
     background-color: var(--color-1);
-    color: rgb(241, 213, 213);
+    color: rgb(156, 4, 63);
     text-align: center;
     background-attachment: fixed;
-    background-image: url(/img/grn-bkgrnd0.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     position: relative;
@@ -88,10 +99,7 @@ body {
 }
 
 
-.top {
-    background-color: black;
-     
-}
+
 
 .title {
     animation: title 3s linear;
@@ -107,6 +115,13 @@ body {
     word-spacing: 15px;
 }
 
+.p1 {
+    background-color: white;
+    height: 18vh;
+    line-height: normal;
+    padding: 0;
+}
+
 @media (max-width:600px) {
      .title {
         font-size: calc(1.5rem + 1vw);
@@ -115,37 +130,35 @@ body {
     }
 }
 
- #layer {
-    width: 100%;
-    background-color: rgba(201, 210, 236, 0.6);                                                
-    color: rgb(6, 3, 56);
-    height: max-content;      
-    padding: 2rem;                             
-    margin: 0 auto;    
-} 
+ 
+
+
 
 .ul1 {
     
     background:none;
-    color: black;
-    display: inline;
+    color: rgb(77, 9, 20);
+    display: block;
+    font-family: 'Poppins', sans-serif;
     font-size: calc(0.5rem + 1vw);
-    font-weight: 600;
+    font-weight: 400;
     justify-content: space-around;
     line-height: 1.5;
     list-style-type: square;
-    padding: 0;
+    padding-left: 50px;
     position: relative;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     text-transform: uppercase;
-    width: 100%;
+    width: 90%;
 }
 
 
-.main1 {
-    font-size: normal;
+p {
+    font-size: calc(0.8rem + 1vw);
+    font-weight: 200;
     justify-content: center;
+    line-height: 2.5rem;
 }
 
 
@@ -163,13 +176,51 @@ h2 {
     font-size: var(--size-two);
 }
 
+input[type=text],
+input[type=email],
+input[type=phone] {
+    padding: 10px;
+     margin: 8px 0;
+     border: none;
+     border-radius: 8px;
+}
+
+textarea {
+    border-radius: 8px;
+}
 
 
 
 
+button {
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    
+    padding: .5em;
+    text-transform: uppercase;
+}
+
+button[type=submit] {
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+footer {
+    background-color: rgb(41, 4, 4);
+}
 
 footer a {
-    background-color: rgba(34, 2, 34, .5);
     color: var(--color-3);
     font-weight: normal;
     line-height: 1.5;
@@ -185,7 +236,6 @@ footer a:active {
     text-decoration: underline;
   
 }
-
 
 
 
