@@ -9,7 +9,7 @@
 html {
     box-sizing: border-box;
     color: black;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     line-height: 1.4;
 }
@@ -76,6 +76,8 @@ nav a:active {
     font-weight: 500;
 }
 
+/* animation is not used where the image is already complex.  */ 
+
 .title {
     color:white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -96,6 +98,14 @@ nav a:active {
    }
 }
 
+@media (max-width:320px) {
+
+    .title {
+         top: 100px;
+    }
+
+}
+
 
 
 body {
@@ -108,6 +118,7 @@ body {
     color: rgb(241, 213, 213);
     font-family: 'Poppins', sans-serif;
     font-size: calc(0.5rem + 1vw);
+    font-weight: 300;
     margin: 0;
     padding: 0;
     position: relative;
@@ -116,7 +127,7 @@ body {
 }
 
 #layer1 {
-    background-color: rgba(1, 4, 12, 0.4);                                                
+    background-color: rgba(1, 4, 12, 0.6);                                                
     color: white;
     height: max-content;
     margin: 0 auto;      
@@ -131,6 +142,7 @@ body {
 
 
 .main1 {
+    
     font-size: normal;
     justify-content: center;
 }
@@ -150,8 +162,10 @@ h2 {
 }
 
 p {
-    font-family: 'poppins', sans-serif;
-    margin: 0 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(0.8rem + 1vw);
+    font-weight: 300;
+    margin: 0 15px;
     line-height: 1.5;
 }
 
@@ -169,11 +183,12 @@ p {
 
 footer {
     background-color: rgb(41, 4, 4);
+    border-top: 7px solid var(--color-2);
 }
 
 footer a {
     color: var(--color-3);
-    font-family: 'poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
     line-height: 1.5;
     padding: 2px;
