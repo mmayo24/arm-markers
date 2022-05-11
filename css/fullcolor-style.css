@@ -91,8 +91,8 @@ nav a:active {
 @media (max-width:320px) {
 
     .title {
-        font-size: calc(.75rem + 1vw);
-        top: 100px;
+        font-size: calc(.55rem + 1vw);
+        top: 50px;
     }
 
 }

@@ -213,12 +213,10 @@ button[type=submit] {
 
 
 
-
-
-
 footer {
     background-color: rgb(41, 4, 4);
     border-top: 7px solid var(--color-2);
+    line-height: 1.5;
     margin: 0;
 }
 

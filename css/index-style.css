@@ -85,7 +85,7 @@ body {
 
     .tagline {
         font-size: calc(.75rem + 1vw);
-        top: 100px;
+        top: 50px;
     }
 
 }
