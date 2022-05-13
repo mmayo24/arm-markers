@@ -91,8 +91,8 @@ nav a:active {
 @media (max-width:320px) {
 
     .title {
-        font-size: calc(.55rem + 1vw);
-        top: 50px;
+        font-size: calc(.3rem + 1vw);
+        top: 20px;
     }
 
 }
@@ -224,12 +224,13 @@ footer a:active {
    }
 
    .ul1 {
-       padding-left: 70px;
+       padding-left: 40px;
    }
 
    .p1b {
        width: 90%;
    }
+
 }
 
 

@@ -182,11 +182,7 @@ footer {
     border-top: 7px solid var(--color-2);
 }
 
-/* this epit link is an external link for epitaph suggestions - this sht. only */
 
-.epit {
-    color: yellow;
-}
 
 footer a {
     color: var(--color-3);

@@ -76,7 +76,7 @@ nav a:active {
     font-weight: 500;
 }
 
-/* animation is not used where the image is already complex.  */ 
+
 
 .title {
     color:white;
@@ -101,7 +101,7 @@ nav a:active {
 @media (max-width:320px) {
 
     .title {
-         top: 50px;
+         top: 20px;
     }
 
 }
