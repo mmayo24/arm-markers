@@ -90,10 +90,10 @@ nav a:active {
 
 @media (max-width:320px) {
 
-    .title {
+   /* .title {
         font-size: calc(.2rem + 1vw);
         top: 10px;
-    }
+    } */
 
     .ul1 {
         padding-left: 300px;

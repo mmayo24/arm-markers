@@ -51,7 +51,7 @@ body {
 } 
 
 
-.tagline {
+/*.tagline {
     animation: tagline 3s linear;
     color: rgb(224, 75, 82);
     font-family: 'Poppins', sans-serif;
@@ -63,7 +63,7 @@ body {
     top: 450px;
     width: 100%;
     word-spacing: 10px;
-}
+}  */
 
 @media (max-width:600px) {
      .tagline {
@@ -90,6 +90,15 @@ body {
 
 }
 
+.img01 {
+    
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    z-index: 40;
+}
+
 
 img {
     border-radius: 2rem;
@@ -100,14 +109,6 @@ img {
     top: 0;
 }
 
-.img01 {
-    
-    margin: 0;
-    padding: 0;
-    position: relative;
-    width: 100%;
-    z-index: 40;
-}
 
 nav,
 nav a,
