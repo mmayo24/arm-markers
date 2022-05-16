@@ -101,7 +101,7 @@ nav a:active {
 @media (max-width:320px) {
 
     .title {
-         top: 20px;
+         top: 10px;
     }
 
 }
