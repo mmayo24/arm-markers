@@ -104,6 +104,10 @@ nav a:active {
         top: 100px;
     }
 
+    .p1b {
+        width: 95%;
+    }
+
 }
 
 
@@ -167,7 +171,7 @@ h2 {
 }
 
 .p1b {
-    width: 80%;
+    width: 85%;
 }
 
 .p0 {
