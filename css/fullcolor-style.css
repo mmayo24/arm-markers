@@ -97,6 +97,7 @@ nav a:active {
 
     .ul1 {
         padding-left: 300px;
+        font-size: calc(4rem + 1vw);
     }
 
 }
@@ -150,8 +151,8 @@ p {
     background-color:rgba(16, 16, 51, .3);
     display: block;
     color: white;
-    font-size: calc(0.5rem + 1vw);
-    font-weight: 400;
+    font-size: calc(0.75rem + 1vw);
+    font-weight: 300;
     justify-content: space-around;
     line-height: 2;
     list-style-type: square;

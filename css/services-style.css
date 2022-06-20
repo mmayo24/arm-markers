@@ -175,44 +175,7 @@ h2 {
     color: var(--color-2);
     font-size: var(--size-two);
 }
-/*
 
-input[type=text],
-input[type=email],
-input[type=phone] {
-    padding: 10px;
-     margin: 8px 0;
-     border: none;
-     border-radius: 8px;
-}
-
-textarea {
-    border-radius: 8px;
-}
-
-
-
-
-button {
-    background-color: black;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-    font-size: .75rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
-    
-    padding: .5em;
-    text-transform: uppercase;
-}
-
-button[type=submit] {
-    margin-top: 2rem;
-}
-
-*/
 
 
 footer {
